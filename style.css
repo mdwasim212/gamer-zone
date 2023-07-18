@@ -1,0 +1,132 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #FFF;
+}
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 0px 240px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+.nav-logo img{
+    width: 86.041px;
+    height: 40px;
+    padding-right: 20px; 
+}
+.logo-g{
+     color:#FF42A5
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: #3C354F;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-link >ul{
+    display: flex;
+   list-style: none;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: none;
+    padding: 0px 20px;
+
+
+}
+.button-text{
+    color: #3C354F;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+.button-img{
+    width: 24px;
+    height: 24px;
+    padding: 0px 0px 0px 20px;
+}
+/* end nav style */
+/* start banner style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 240px;
+}
+.banner-area{
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+}
+.banner-greeting{
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 150px;
+    text-transform: uppercase;
+}
+.banner-title{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.banner-tex{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+}
+.signin-butto{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    padding: 20px 40px;
+}
+.rogue-button{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+    padding: 20px 40px;
+}
+
+/* end banner style */
