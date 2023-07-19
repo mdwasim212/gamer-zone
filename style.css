@@ -62,8 +62,6 @@ nav li{
     background: rgba(11, 2, 35, 0.10);
     border: none;
     padding: 0px 20px;
-
-
 }
 .button-text{
     color: #3C354F;
@@ -81,7 +79,6 @@ nav li{
 /* start banner style */
 .banner{
     display: flex;
-    justify-content: space-between;
     padding: 0px 150px;
     gap: 200px;
 }
@@ -309,24 +306,38 @@ footer{
         flex-direction: column;
         text-align: center;
         padding: 0px 80px;
-        margin: 0;
+        margin-bottom: 50px;
     }
   .nav-link{
     flex-direction: column;
-    padding: 0px 100px;
+    padding: 0px;
   }
   .nav-link >ul{
     flex-direction: column;
     padding-bottom: 20px;
   }
-  .nav li{
+  .nav >ul > li a{
     padding-bottom: 50px;
-  } 
+  }
+  .nav-button{
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+.button-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.button-img{
+    width: 16px;
+    height: 16px;
+    padding: 0px 0px 0px 10px;
+} 
 /* banner style */
   .banner{
     flex-direction: column-reverse;
-    padding: 0px 50px;
+    padding: 0px 100px;
     margin: 0px;
+    gap: 0;
     background-position: bottom;
   }
   .banner-greeting{
@@ -335,6 +346,25 @@ footer{
   .banner-title{
     font-size: 50px;
   }
+  .banner-tex{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 100px;
+}
+.banner-button{
+    display: flex;
+    gap: 5px;
+}
+.rogue-button{
+    font-size: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.signin-butto{
+    font-size: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
   /* online game style */
   .online-game-img-area{
     flex-direction: column;
@@ -355,6 +385,9 @@ footer{
   /* play game style */
   .play-game-area{
     flex-direction: column;
+    margin: 0;
+    gap: 0;
+    padding: 0px 50px;
   }
   .play-title{
     font-size: 25px;
@@ -367,6 +400,16 @@ footer{
     font-size: 18px;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
+    margin: 30px 0px;
+}
+.anniversary-img{
+    width: 80%;
+    margin-left: 70px;
+}
+.my-talking-img{
+    position: relative;
+    bottom: 100px;
+    width: 40%;
 }
 /* game link style */
 .game-link-area{
@@ -387,6 +430,11 @@ footer{
 footer{
 padding: 0px 50px;
 }
+.footer-title{
+    font-size: 30px;
+    padding: 50px 50px 0px 60px ;
+    margin: 0;
+ }
 .footer-link a{
     font-size: 12px;
     font-weight: 600;
@@ -394,14 +442,14 @@ padding: 0px 50px;
     padding: 20px;
 }
 .footer-setting a{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     text-decoration: none;
     padding: 20px;
 }
 .footer-copy-right{
-    font-size: 15px;
-    padding: 30px 50px 100px 50px;
+    font-size: 12px;
+    padding: 30px 40px 100px 40px;
 }
 
 
