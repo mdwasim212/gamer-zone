@@ -142,6 +142,9 @@ nav li{
 
 /* end banner style */
 /* start online game style */
+.online-game-area{
+    margin-top: 100px;
+}
 .online-game-title{
     color: #0B0223;
     text-align: center;
@@ -174,7 +177,7 @@ nav li{
 }
 .online-game-img-area img{
     width: 100%;
-    height: 50%;
+    height: 60%;
 }
 .img-text{
     color: #534C64;
@@ -184,7 +187,47 @@ nav li{
     font-weight: 500;
     line-height: 30px; /* 150% */
 }
+.img-card {
+    position: relative;
+    display: flex;
+    transition: opacity 0.2s ease;
+}
 
+.img-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border-radius: 16px;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.img-card:hover::before {
+    opacity: 1;
+}
+
+.ytub-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.ytub-btn .watch-now-txt {
+    color: #FF42A5;
+}
+
+.img-card:hover .ytub-btn {
+    opacity: 1;
+}
 
 /* end online game style */
 /* start play game style */
@@ -239,6 +282,14 @@ nav li{
 .game-link-area a img{
     width: 25px;
     height: 25px;
+}
+.link-buttton{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.link-buttton:hover{
+    opacity: 50%;
 }
 
 /* end game link style */
@@ -332,13 +383,16 @@ footer{
     height: 16px;
     padding: 0px 0px 0px 10px;
 } 
+header{
+    background-position: left bottom;
+    background-size: 120%;
+}
 /* banner style */
   .banner{
     flex-direction: column-reverse;
     padding: 0px 100px;
     margin: 0px;
     gap: 0;
-    background-position: bottom;
   }
   .banner-greeting{
     font-size: 30px;
@@ -381,6 +435,46 @@ footer{
 }
 .img-text{
     font-size: 12px;
+}
+.img-card {
+    position: relative;
+    display: flex;
+    transition: opacity 0.2s ease;
+}
+
+.img-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    border-radius: 16px;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.img-card:hover::before {
+    opacity: 1;
+}
+
+.ytub-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.ytub-btn .watch-now-txt {
+    color: #FF42A5;
+}
+.img-card:hover .ytub-btn {
+    opacity: 1;
 }
   /* play game style */
   .play-game-area{
@@ -442,7 +536,7 @@ padding: 0px 50px;
     padding: 20px;
 }
 .footer-setting a{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     text-decoration: none;
     padding: 20px;
@@ -463,11 +557,131 @@ padding: 0px 50px;
         align-items: center;
         padding: 0;
     }
-
-    .banner{
+    header{
+        background-position: left bottom;
+        background-size: 90%;
+    }
+   /* banner style */
+   .banner{
+        flex-direction: column-reverse;
+        padding: 0px 100px;
+        margin: 0px;
+        gap: 0;
+     }
+    .banner-greeting{
+        font-size: 40px;
+     }
+    .banner-title{
+        font-size: 65px;
+     }
+    .banner-tex{
+        font-size: 30px;
+        font-weight: 500;
+        padding-left:200px;
+     }
+    .banner-button{
+        display: flex;
+        gap: 5px;
+     }
+    .rogue-button{
+        font-size: 15px;
+        border-radius: 30px;
+        padding: 15px 25px;
+    }
+    .signin-butto{
+        font-size: 15px;
+        border-radius: 30px;
+        padding: 15px 25px;
+    }
+      /* online game style */
+    .online-game-img-area{
+       flex-direction: column;
+       margin: 0px 100px;
+     }
+    .online-game-title{
+       font-size: 35px;  
+    }
+    .funny-video{
+       font-size: 35px;
+    }
+    .online-game-text{
+       font-size: 18px;
+    }
+    .img-text{
+       font-size: 20px;
+    }
+       /* play game style */
+  .play-game-area{
         flex-direction: column;
-        padding: 0px;
+        margin: 0;
+        gap: 0;
+        padding: 0px 100px;
       }
+  .play-title{
+       font-size: 35px;
+       font-weight: 700;
+       text-align: center;
+       margin: 0;
+    }
+   .play-area-text{
+       text-align: center;
+       font-size: 20px;
+       font-weight: 400;
+       line-height: 30px; /* 166.667% */
+       margin: 30px 0px;
+    }
+  .anniversary-img{
+      width: 80%;
+      margin-left: 70px;
+   }
+  .my-talking-img{
+      position: relative;
+      bottom: 100px;
+      width: 40%;
+  }
+
+      /* game link style */
+    .game-link-area{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 10px;
+        padding: 0px 100px;
+        margin-bottom: 50px;
+     }
+    .game-link-area a{
+        font-size: 15px;
+    }
+   .game-link-area a img{
+       width: 20px;
+       height: 20px;
+    }
+
+      /* footer style */
+      footer{
+        padding: 0px 100px;
+        }
+      .footer-title{  
+        font-size: 35px;
+        padding: 50px 50px 50px 180px ;
+        margin: 0;
+     }
+     .footer-link a{
+        font-size: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .footer-setting a{
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .footer-copy-right{
+        font-size: 12px;
+        padding: 30px 40px 100px 40px;
+    }
+    
 }
 
 /* end medium divice */
