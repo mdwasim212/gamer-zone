@@ -265,6 +265,7 @@ nav li{
 /* end play game style */
 /* start game link style */
 .game-link-area{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: grid;
     grid-template-columns: repeat(5 ,1fr);
     gap: 10px;
@@ -277,7 +278,7 @@ nav li{
     font-family: Work Sans;
     font-size: 15px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .game-link-area a img{
     width: 25px;
@@ -287,9 +288,12 @@ nav li{
     display: flex;
     align-items: center;
     gap: 5px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 0px 0px 0px 10px;
 }
 .link-buttton:hover{
-    opacity: 50%;
+   opacity: 50%;
 }
 
 /* end game link style */
@@ -356,8 +360,9 @@ footer{
     nav{
         flex-direction: column;
         text-align: center;
-        padding: 0px 80px;
+        padding: 50px 80px;
         margin-bottom: 50px;
+
     }
   .nav-link{
     flex-direction: column;
@@ -521,6 +526,9 @@ header{
     width: 16px;
     height: 16px;
 }
+.link-buttton:hover{
+    opacity: 50%;
+ }
 /* footer style */
 footer{
 padding: 0px 50px;
@@ -557,6 +565,7 @@ padding: 0px 50px;
         flex-direction: column;
         align-items: center;
         padding: 0;
+        padding-bottom: 50px;
     }
     header{
         background-position: left bottom;
@@ -697,6 +706,9 @@ padding: 0px 50px;
        width: 20px;
        height: 20px;
     }
+    .link-buttton:hover{
+        opacity: 50%;
+     }
 
       /* footer style */
       footer{
