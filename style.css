@@ -233,7 +233,7 @@ nav li{
 /* start play game style */
 .play-game-area{
     display: flex;
-    margin: 0px 150px;
+    margin: 100px 150px 0px 150px;
     gap: 100px;
 }
 .play-title{
@@ -271,6 +271,8 @@ nav li{
     gap: 10px;
     padding: 0px 150px;
     margin-bottom: 100px;
+
+
 }
 .game-link-area a{
     text-decoration: none;
@@ -293,7 +295,11 @@ nav li{
     padding: 0px 0px 0px 10px;
 }
 .link-buttton:hover{
-   opacity: 50%;
+   border: 1px solid #FF42A5;
+   background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 /* end game link style */
@@ -310,8 +316,9 @@ footer{
    font-family: Work Sans;
    font-size: 45px;
    font-weight: 700;
-   margin: 0px 700px;
    padding-top: 50px;
+   justify-content: center;
+
 }
 .footer-link a{
     color: #FFF;
@@ -535,7 +542,6 @@ padding: 0px 50px;
 }
 .footer-title{
     font-size: 30px;
-    padding: 50px 50px 0px 60px ;
     margin: 0;
  }
 .footer-link a{
@@ -716,7 +722,6 @@ padding: 0px 50px;
         }
       .footer-title{  
         font-size: 35px;
-        padding: 50px 50px 50px 180px ;
         margin: 0;
      }
      .footer-link a{
